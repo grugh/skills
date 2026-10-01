@@ -1,0 +1,186 @@
+{
+  "architecture-review": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "mattpocock/skills",
+        "path": "skills/engineering/improve-codebase-architecture",
+        "commit": "d80fa0f4ebe0c5714af0adf8670336065233ecc6",
+        "commit_date": "2026-09-17"
+      },
+      {
+        "repo": "mattpocock/skills",
+        "path": "skills/engineering/codebase-design",
+        "commit": "d80fa0f4ebe0c5714af0adf8670336065233ecc6",
+        "commit_date": "2026-09-17"
+      }
+    ]
+  },
+  "blast-radius": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/blast-radius",
+        "commit": "70b2dc8b4b85c8d5648624ca40d692c421fff32f",
+        "commit_date": "2026-09-23"
+      }
+    ]
+  },
+  "bro": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/bro",
+        "commit": "99559f2f52047978602ef365589275831e76af07",
+        "commit_date": "2026-08-02"
+      }
+    ]
+  },
+  "caveman": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "JuliusBrussee/caveman",
+        "path": "skills/caveman",
+        "commit": "82d2a600843944844d254791bafbec1255793370",
+        "commit_date": "2026-09-20"
+      }
+    ]
+  },
+  "grilling": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "mattpocock/skills",
+        "path": "skills/productivity/grilling",
+        "commit": "85f83d3fde1d3a90d5c9a657f6998c79a6c37308",
+        "commit_date": "2026-08-20"
+      }
+    ]
+  },
+  "grug": {
+    "reviewed": "2026-09-29",
+    "upstream": [],
+    "note": "Inspired by https://grugbrain.dev (Carson Gross). No upstream repo; the essay has no version to track."
+  },
+  "how": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/how",
+        "commit": "12d587dfb20741cafc376c42c696c5f6e2a64487",
+        "commit_date": "2026-09-23"
+      }
+    ]
+  },
+  "innovate": {
+    "reviewed": "2026-09-16",
+    "upstream": [],
+    "note": "Written locally. No upstream."
+  },
+  "interrogate": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/interrogate",
+        "commit": "12d587dfb20741cafc376c42c696c5f6e2a64487",
+        "commit_date": "2026-09-23"
+      },
+      {
+        "repo": "mattpocock/skills",
+        "path": "skills/engineering/code-review",
+        "commit": "5c89081d4bbeb3d039a42093653f90bb698d780e",
+        "commit_date": "2026-08-19"
+      }
+    ]
+  },
+  "principles": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/principle-minimize-reader-load",
+        "commit": "d7cde2b84eadbcd6fd890302c876f4436ccb6d82",
+        "commit_date": "2026-09-08"
+      },
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/principle-subtract-before-you-add",
+        "commit": "e8d856f0273b42ebafe0ec3546bd645709e7c1b0",
+        "commit_date": "2026-09-07"
+      },
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/principle-laziness-protocol",
+        "commit": "e8d856f0273b42ebafe0ec3546bd645709e7c1b0",
+        "commit_date": "2026-09-07"
+      },
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/principle-foundational-thinking",
+        "commit": "d7cde2b84eadbcd6fd890302c876f4436ccb6d82",
+        "commit_date": "2026-09-08"
+      },
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/principle-fix-root-causes",
+        "commit": "e8d856f0273b42ebafe0ec3546bd645709e7c1b0",
+        "commit_date": "2026-09-07"
+      },
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/principle-guard-the-context-window",
+        "commit": "b0b9c7a0baf8b6aa1d00bf77d4101e577d4ba411",
+        "commit_date": "2026-09-23"
+      }
+    ]
+  },
+  "remember": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/recall",
+        "commit": "d7cde2b84eadbcd6fd890302c876f4436ccb6d82",
+        "commit_date": "2026-09-08"
+      },
+      {
+        "repo": "mattpocock/skills",
+        "path": "skills/productivity/handoff",
+        "commit": "d28dfdc39beadc3142a33359b5cfa4765dcbd0bc",
+        "commit_date": "2026-08-15"
+      }
+    ]
+  },
+  "restate": {
+    "reviewed": "2026-09-29",
+    "upstream": [],
+    "note": "Idea by Lauren Tan (poteto). No upstream text to track."
+  },
+  "unslop": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/unslop",
+        "commit": "70b2dc8b4b85c8d5648624ca40d692c421fff32f",
+        "commit_date": "2026-09-23"
+      }
+    ]
+  },
+  "why": {
+    "reviewed": "2026-09-29",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/why",
+        "commit": "12d587dfb20741cafc376c42c696c5f6e2a64487",
+        "commit_date": "2026-09-23"
+      }
+    ]
+  }
+}
