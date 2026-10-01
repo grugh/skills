@@ -1,6 +1,7 @@
 # Agent skills toolkit
 
 A set of independent agent skills. Use any of them on its own. None requires another.
+Each runs only when you invoke it by its command; the agent never loads one on its own.
 
 | Skill | Use it to |
 | --- | --- |
@@ -14,7 +15,7 @@ A set of independent agent skills. Use any of them on its own. None requires ano
 | [principles](skills/principles/SKILL.md) | Apply six pstack principles and some general coding guidelines. |
 | [bro](skills/bro/SKILL.md) | Make an explanation shorter and easier to understand. |
 | [unslop](skills/unslop/SKILL.md) | Remove AI writing patterns from prose. |
-| [remember](skills/remember/SKILL.md) | Set up task memory, save a handoff, or resume saved work. |
+| [remember](skills/remember/SKILL.md) | Load a saved task or save its state. |
 | [innovate](skills/innovate/SKILL.md) | Propose one valuable new project idea without implementing it. |
 | [caveman](skills/caveman/SKILL.md) | Talk in terse caveman speech when asked. |
 | [grug](skills/grug/SKILL.md) | Challenge unnecessary complexity. Grug's voice stays in chat. |
@@ -42,38 +43,36 @@ To install manually, copy a skill folder, with everything in it, into your harne
 
 The `remember` skill saves task state between sessions. Installing it does not
 turn memory on. Invoke it in each session that should use memory:
-`/remember` (Claude Code), `$remember` (Codex) or `/skill:remember` (Pi).
+`/remember` (Claude Code), `$remember` (Codex) or `/skill:remember` (Pi). Start
+the message with the command; mentioning it mid-sentence does not load it.
 
-The skill adds `.local/agents/` to your ignore rules, installs
-`.local/agents/README.md` if it is missing, and writes the task's `state.md`.
-It never overwrites existing files. Add `setup` (for example `/remember setup`)
-to do the setup and save nothing.
+The first save adds `/.local/agents/` to the project's `.gitignore` (unless a
+rule inside the repository already covers it), installs `.local/agents/README.md`
+if it is missing, and writes the task's `state.md`. It never overwrites an
+existing protocol.
 
-Once a task is loaded, the agent updates its state after meaningful progress and
-before handoff, including while it uses other skills. Nothing runs in the
-background. These are instructions to the agent, and `remember` on its own
-reconciles the state before you stop.
+`state.md` is the only task record: goal, decisions, status, open issues and the
+next step, kept short and overwritten in place. The skill never reads or writes
+your repository docs. Those change only when you ask for a specific edit.
 
-To resume in a new session, run `/remember resume FEATURE-42` or
-`/remember resume invoice export`. Resume reads the saved state and checks it
-against the repository. It writes nothing and creates nothing. Say what you want
-done next, or ask for a summary only. Existing memory files do not start a
-session on their own.
+Once a task is loaded, the agent updates `state.md` after commits, finished
+checks and decisions, and before handoff. Nothing runs in the background. These
+are instructions to the agent, and `remember` on its own reconciles the state
+before you stop.
 
-Two phrases override this:
-
-- "Don't use persistent memory this session": no reads or writes, and existing
-  files stay untouched.
-- "Read the saved state, but don't update memory this session": the agent reads
-  existing state but does no setup and writes nothing.
+There are no subcommands. Describe the task however you remember it:
+`/remember the dcv validation thing`, or just `/remember` on the task's branch.
+The agent finds the closest saved task and asks if several fit. The first call
+in a session loads the task: it reads the state, compares it with the repository
+and writes nothing. Later calls save. If nothing matches and you describe new
+work, it creates a task. Existing memory files do not start a session
+on their own. Saying "don't use memory" or "only read memory" overrides this for
+the session.
 
 The [protocol template](skills/remember/assets/project-state.md) ships with the
-skill. To set up by hand, ignore `/.local/agents/` and copy the template to
-`.local/agents/README.md`.
-
-In a Git project, check that `git check-ignore .local/agents/README.md` prints
-the path and `git ls-files -- .local/agents/` prints nothing. Ignore rules do not
-untrack files Git already tracks.
+skill. To set up by hand, add `/.local/agents/` to `.gitignore` and copy the
+template to `.local/agents/README.md`. Check that `git ls-files -- .local/agents/`
+prints nothing; ignore rules do not untrack files Git already tracks.
 
 ## Credits
 

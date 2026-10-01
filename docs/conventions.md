@@ -3,6 +3,11 @@
 A small set of coding-agent skills. Each works on its own. The skill list and
 install steps are in [README.md](../README.md).
 
+- **Explicit.** Skills run only when you invoke them, never because the agent
+  decides one fits. Each sets `disable-model-invocation: true`,
+  `opencode/autoinvoke: "false"` and, in `agents/openai.yaml`,
+  `allow_implicit_invocation: false`. Start the message with the command
+  (`/how`, `$how`); a mention mid-sentence does not load the skill.
 - **Independent.** A skill may recommend another skill but never invokes it.
   There is no required order and no shared runtime.
 - **Portable.** No skill requires a vendor API, session format or model name.
@@ -25,21 +30,16 @@ first-use setup. It bundles its own
 [protocol template](../skills/remember/assets/project-state.md), so it installs
 without the rest of this repo.
 
-- Invoking `remember` to save a task installs the protocol if it is missing,
-  adds the ignore rule, and writes the state. `setup` does only the first two.
-- Existing protocols and task files are never overwritten.
-- Ordinary work in a project without memory does not turn memory on.
-- Every session starts with an explicit save or resume. Resume reads existing
-  state and does no setup or checkpoint. A loaded task's protocol then guides
-  updates for that session.
-- "Don't use persistent memory" means no reads or writes. "Read but don't
-  update" allows reads only. Neither deletes files or leaves a marker.
+- The first save adds a project ignore rule, installs the protocol if it is
+  missing, and writes the state. Existing protocols are never overwritten.
+- Ordinary work does not turn memory on. Each session starts with an explicit
+  invocation. The first one on an existing task only reads; later ones save.
+- `state.md` is the only task record. Repository docs are shared knowledge and
+  change only on a specific request. Task status never goes into tracked files.
+- "Don't use memory" means no reads or writes. "Only read memory" allows reads.
+  Neither deletes files or leaves a marker.
 - Nothing runs in the background. The agent follows instructions, so updates
   are not guaranteed.
-
-A task starts with one `state.md`, enough for a fresh agent to resume from the
-repo files. There is no task registry, no required template sections and no
-automatic archiving.
 
 ## Attribution
 
