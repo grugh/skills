@@ -47,13 +47,20 @@ turn memory on. Invoke it in each session that should use memory:
 the message with the command; mentioning it mid-sentence does not load it.
 
 The first save adds `/.local/agents/` to the project's `.gitignore` (unless a
-rule inside the repository already covers it), installs `.local/agents/README.md`
-if it is missing, and writes the task's `state.md`. It never overwrites an
-existing protocol.
+rule inside the repository already covers it), writes a short
+`.local/agents/README.md` marker, and writes the task's `state.md`.
 
-`state.md` is the only task record: goal, decisions, status, open issues and the
-next step, kept short and overwritten in place. The skill never reads or writes
-your repository docs. Those change only when you ask for a specific edit.
+The [protocol](skills/remember/assets/project-state.md) lives only in the skill,
+so updating the skill updates every project. Each save rewrites `state.md` in
+the current format. The skill never reads or changes an existing
+`.local/agents/README.md`.
+
+`state.md` is the only status record: goal, context, decisions, status, open
+issues and the next step, kept short and overwritten in place. Specs, contracts
+and plans sit next to it in the task folder. Detail that no longer fits moves to
+the task's `artifacts/`; nothing is deleted to meet the size limit. The skill
+never reads or writes your repository docs. Those change only when you ask for a
+specific edit.
 
 Once a task is loaded, the agent updates `state.md` after commits, finished
 checks and decisions, and before handoff. Nothing runs in the background. These
@@ -69,10 +76,9 @@ work, it creates a task. Existing memory files do not start a session
 on their own. Saying "don't use memory" or "only read memory" overrides this for
 the session.
 
-The [protocol template](skills/remember/assets/project-state.md) ships with the
-skill. To set up by hand, add `/.local/agents/` to `.gitignore` and copy the
-template to `.local/agents/README.md`. Check that `git ls-files -- .local/agents/`
-prints nothing; ignore rules do not untrack files Git already tracks.
+To set up by hand, add `/.local/agents/` to `.gitignore`. Check that
+`git ls-files -- .local/agents/` prints nothing; ignore rules do not untrack files
+Git already tracks.
 
 ## Credits
 
