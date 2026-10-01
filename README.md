@@ -12,7 +12,6 @@ Each runs only when you invoke it by its command; the agent never loads one on i
 | [architecture-review](skills/architecture-review/SKILL.md) | Find modules worth deepening, compare candidates in an HTML report, and explore one. |
 | [interrogate](skills/interrogate/SKILL.md) | Review a diff adversarially, against standards and spec, or both. Defaults to adversarial. |
 | [blast-radius](skills/blast-radius/SKILL.md) | Find consumers and behavior at risk outside a change. |
-| [principles](skills/principles/SKILL.md) | Apply six pstack principles and some general coding guidelines. |
 | [bro](skills/bro/SKILL.md) | Make an explanation shorter and easier to understand. |
 | [unslop](skills/unslop/SKILL.md) | Remove AI writing patterns from prose. |
 | [remember](skills/remember/SKILL.md) | Load a saved task or save its state. |
@@ -86,7 +85,7 @@ Most of these skills adapt other people's work. Thank you to:
 
 - **[Lauren Tan (@poteto)](https://github.com/poteto)** for
   [pstack](https://github.com/cursor/plugins/tree/main/pstack), the source of
-  `how`, `why`, `bro`, `unslop`, `blast-radius`, `interrogate`, `principles`
+  `how`, `why`, `bro`, `unslop`, `blast-radius`, `interrogate`
   and the session pickup ideas behind `remember`, and for the idea behind
   `restate`. MIT.
 - **[Matt Pocock](https://github.com/mattpocock/skills)** for `grilling`,
