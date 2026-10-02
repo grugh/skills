@@ -45,9 +45,9 @@ turn memory on. Invoke it in each session that should use memory:
 `/remember` (Claude Code), `$remember` (Codex) or `/skill:remember` (Pi). Start
 the message with the command; mentioning it mid-sentence does not load it.
 
-The first save adds `/.local/agents/` to the project's `.gitignore` (unless a
-rule inside the repository already covers it), writes a short
-`.local/agents/README.md` marker, and writes the task's `state.md`.
+The first save writes `.local/agents/.gitignore` containing `*`, so the folder
+ignores itself and the project's `.gitignore` stays untouched. It also writes a
+short `.local/agents/README.md` marker and the task's `state.md`.
 
 The [protocol](skills/remember/assets/project-state.md) lives only in the skill,
 so updating the skill updates every project. Each save rewrites `state.md` in
@@ -75,9 +75,8 @@ work, it creates a task. Existing memory files do not start a session
 on their own. Saying "don't use memory" or "only read memory" overrides this for
 the session.
 
-To set up by hand, add `/.local/agents/` to `.gitignore`. Check that
-`git ls-files -- .local/agents/` prints nothing; ignore rules do not untrack files
-Git already tracks.
+Check that `git ls-files -- .local/agents/` prints nothing; ignore rules do not
+untrack files Git already tracks.
 
 ## Credits
 

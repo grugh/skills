@@ -36,8 +36,9 @@ Progress, pending work and next steps never go into tracked files.
    symlinks out of it.
 2. If `git ls-files -- .local/agents/` lists anything, report it and stop. Never
    untrack files.
-3. Run `git check-ignore -v .local/agents/README.md`. If it fails,
-   append `/.local/agents/` to `.gitignore`.
+3. If `.local/agents/.gitignore` is missing, create it containing only `*`, so the
+   folder ignores itself. Never edit the repository's ignore files. Then run
+   `git check-ignore -q .local/agents/README.md`; if it fails, report it and stop.
 4. If `.local/agents/README.md` is missing, create it with the text below. Never
    change an existing one; the skill doesn't read it.
 
