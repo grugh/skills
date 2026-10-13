@@ -1,6 +1,6 @@
 {
   "architecture-review": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "mattpocock/skills",
@@ -17,18 +17,18 @@
     ]
   },
   "blast-radius": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/blast-radius",
-        "commit": "70b2dc8b4b85c8d5648624ca40d692c421fff32f",
-        "commit_date": "2026-09-23"
+        "commit": "df581122cde17e6e27686b5a448bde23e4ad4318",
+        "commit_date": "2026-10-06"
       }
     ]
   },
   "bro": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -39,24 +39,24 @@
     ]
   },
   "caveman": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "JuliusBrussee/caveman",
         "path": "skills/caveman",
-        "commit": "82d2a600843944844d254791bafbec1255793370",
-        "commit_date": "2026-09-20"
+        "commit": "7d76b13b00c620599a840dcc131ad43f0eeb2e6b",
+        "commit_date": "2026-10-06"
       }
     ]
   },
   "grilling": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "mattpocock/skills",
         "path": "skills/productivity/grilling",
-        "commit": "85f83d3fde1d3a90d5c9a657f6998c79a6c37308",
-        "commit_date": "2026-08-20"
+        "commit": "95249b0b49782349740fd9b8c6ce32b4e59e497a",
+        "commit_date": "2026-10-07"
       }
     ]
   },
@@ -66,13 +66,13 @@
     "note": "Inspired by https://grugbrain.dev (Carson Gross). No upstream repo; the essay has no version to track."
   },
   "how": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/how",
-        "commit": "12d587dfb20741cafc376c42c696c5f6e2a64487",
-        "commit_date": "2026-09-23"
+        "commit": "08bd59b37834550f5e8fa0bb5e8852204a7534cf",
+        "commit_date": "2026-10-12"
       }
     ]
   },
@@ -82,24 +82,24 @@
     "note": "Written locally. No upstream."
   },
   "interrogate": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/interrogate",
-        "commit": "12d587dfb20741cafc376c42c696c5f6e2a64487",
-        "commit_date": "2026-09-23"
+        "commit": "00b14f1df36b32a8dd1529324a3a459f6563b127",
+        "commit_date": "2026-10-10"
       },
       {
         "repo": "mattpocock/skills",
         "path": "skills/engineering/code-review",
-        "commit": "5c89081d4bbeb3d039a42093653f90bb698d780e",
-        "commit_date": "2026-08-19"
+        "commit": "3da8c01116264675eeefbd6e9d59c734de9095cc",
+        "commit_date": "2026-10-07"
       }
     ]
   },
   "remember": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -110,8 +110,8 @@
       {
         "repo": "mattpocock/skills",
         "path": "skills/productivity/handoff",
-        "commit": "d28dfdc39beadc3142a33359b5cfa4765dcbd0bc",
-        "commit_date": "2026-08-15"
+        "commit": "0f5e033ebc47b142f5ffa56a582ede6d9d9bada3",
+        "commit_date": "2026-10-06"
       }
     ]
   },
@@ -127,24 +127,24 @@
     ]
   },
   "unslop": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/unslop",
-        "commit": "70b2dc8b4b85c8d5648624ca40d692c421fff32f",
-        "commit_date": "2026-09-23"
+        "commit": "bc697d0a5a163cec979e362b601e36f5616083fd",
+        "commit_date": "2026-10-12"
       }
     ]
   },
   "why": {
-    "reviewed": "2026-09-29",
+    "reviewed": "2026-10-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/why",
-        "commit": "12d587dfb20741cafc376c42c696c5f6e2a64487",
-        "commit_date": "2026-09-23"
+        "commit": "08bd59b37834550f5e8fa0bb5e8852204a7534cf",
+        "commit_date": "2026-10-12"
       }
     ]
   }
