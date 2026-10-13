@@ -49,10 +49,10 @@ Most skills adapt other people's work. [README.md](../README.md#credits) credits
 the authors. Each skill records its origin in `metadata.source` and ships its own
 `LICENSE` so it can be installed alone.
 
-`bro`, `unslop` and `grilling` use the upstream instructions with local
-metadata. The other skills are adapted or written locally. `restate` follows
-an idea from Lauren Tan. `grug` takes ideas from The Grug Brained Developer by
-Carson Gross and copies none of its text.
+`bro`, `unslop`, `grilling` and `restate` use the upstream instructions with
+local metadata. The other skills are adapted or written locally. `grug` takes
+ideas from The Grug Brained Developer by Carson Gross and copies none of its
+text.
 
 Skills are adapted by hand, not synced automatically. `.upstream.json` records
 the last upstream commit reviewed for each skill, and

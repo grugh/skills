@@ -116,9 +116,15 @@
     ]
   },
   "restate": {
-    "reviewed": "2026-09-29",
-    "upstream": [],
-    "note": "Idea by Lauren Tan (poteto). No upstream text to track."
+    "reviewed": "2026-10-13",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/in-your-own-words",
+        "commit": "dbf49813a39c1a5389c5e28cb8e4c1c2379e2454",
+        "commit_date": "2026-10-13"
+      }
+    ]
   },
   "unslop": {
     "reviewed": "2026-09-29",

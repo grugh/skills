@@ -5,7 +5,7 @@ disable-model-invocation: true
 license: MIT
 metadata:
   opencode/autoinvoke: "false"
-  source: "Idea by Lauren Tan (@poteto)."
+  source: "Lauren Tan, pstack: in-your-own-words."
 ---
 
-Restate in your own words what you think my goals are and what the problem i'm trying to solve is.
+Restate in your own words what you think the user's goals are and what problem they're trying to solve.

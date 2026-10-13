@@ -84,9 +84,9 @@ Most of these skills adapt other people's work. Thank you to:
 
 - **[Lauren Tan (@poteto)](https://github.com/poteto)** for
   [pstack](https://github.com/cursor/plugins/tree/main/pstack), the source of
-  `how`, `why`, `bro`, `unslop`, `blast-radius`, `interrogate`
-  and the session pickup ideas behind `remember`, and for the idea behind
-  `restate`. MIT.
+  `how`, `why`, `bro`, `unslop`, `blast-radius`, `interrogate`,
+  `restate` (from `in-your-own-words`) and the session pickup ideas behind
+  `remember`. MIT.
 - **[Matt Pocock](https://github.com/mattpocock/skills)** for `grilling`,
   `architecture-review` (from `improve-codebase-architecture`), the `code-review`
   method in `interrogate` and the context persistence ideas in `remember`. MIT.
