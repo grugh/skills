@@ -31,8 +31,16 @@ about 80 lines, with these sections:
 - **Status:** done, verified (with the check that proved it), pending, uncommitted
   work, branch and last commit.
 - **Open issues:** known gaps, deferred problems, checks still needed.
-- **Next:** one concrete action with the file or symbol, or "complete" plus any
-  follow-up.
+- **Next:** the next piece of work, sized to finish and verify in one fresh
+  session, starting with a concrete action on a file or symbol. Or "complete"
+  plus any follow-up.
+
+When more than one piece remains, list the rest in order in `plan.md`, each one
+sized for a fresh session and verifiable on its own. Skip `plan.md` when one
+piece covers the task. **Status** names the pieces done.
+
+When the piece in **Next** is done and verified, save, then stop and suggest a fresh
+session for the next piece. Don't start it in this session.
 
 Overwrite in place and don't keep a diary. Link commits, repository files and
 supporting docs instead of copying them.
