@@ -126,6 +126,17 @@
       }
     ]
   },
+  "technical-writing": {
+    "reviewed": "2026-10-22",
+    "upstream": [
+      {
+        "repo": "cursor/plugins",
+        "path": "pstack/skills/technical-writing",
+        "commit": "00b14f1df36b32a8dd1529324a3a459f6563b127",
+        "commit_date": "2026-10-10"
+      }
+    ]
+  },
   "unslop": {
     "reviewed": "2026-10-13",
     "upstream": [
