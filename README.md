@@ -54,10 +54,10 @@ so updating the skill updates every project. Each save rewrites `state.md` in
 the current format. The skill never reads or changes an existing
 `.local/agents/README.md`.
 
-`state.md` is the only status record: goal, context, decisions, status, open
-issues and the next step, kept short and overwritten in place. Specs, contracts
-and plans sit next to it in the task folder. Detail that no longer fits moves to
-the task's `artifacts/`; nothing is deleted to meet the size limit. The skill
+`state.md` is the entry point and the only status record: goal, status, open
+issues, the next step and links to topic files, overwritten in place. Reference
+material such as context, decisions, plans and specs goes in topic files next to
+it, one topic per file, created when the topic first has content. The skill
 never reads or writes your repository docs. Those change only when you ask for a
 specific edit.
 

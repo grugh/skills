@@ -72,7 +72,7 @@ and ask. Continue an archived task in place.
 1. Check the branch, `git status` and the relevant diff, and correct stale notes.
 2. Write `state.md` in the protocol's current format, overwriting in place. Convert
    an older task the same way: keep its old files, link them from `state.md`, and
-   move detail that doesn't fit to `artifacts/` rather than dropping it. A new task
+   move reference material out of `state.md` into topic files. A new task
    goes in `tasks/<name>/state.md`: the ticket as written, if there is one, plus a
    short kebab-case topic. Never invent a ticket.
 

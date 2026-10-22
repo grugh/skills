@@ -30,12 +30,13 @@ first-use setup. Its
 [protocol](../skills/remember/assets/project-state.md) lives only in the skill,
 so it installs without the rest of this repo and projects never hold a stale copy.
 
-- The first save adds a project ignore rule, a short README marker if none
-  exists, and the state. Each save converts older state to the current format.
-  An existing README is never read or changed.
+- The first save adds `.local/agents/.gitignore` so the folder ignores itself,
+  a short README marker if none exists, and the state. Each save converts older
+  state to the current format. An existing README is never read or changed.
 - Ordinary work does not turn memory on. Each session starts with an explicit
   invocation. The first one on an existing task only reads; later ones save.
-- `state.md` is the only status record; supporting docs sit beside it.
+- `state.md` is the entry point and the only status record; topic files beside
+  it hold reference material.
   Repository docs are shared knowledge and change only on a specific request.
   Task status never goes into tracked files.
 - "Don't use memory" means no reads or writes. "Only read memory" allows reads.
