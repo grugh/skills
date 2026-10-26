@@ -17,7 +17,7 @@
     ]
   },
   "blast-radius": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -28,7 +28,7 @@
     ]
   },
   "bro": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -39,7 +39,7 @@
     ]
   },
   "caveman": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "JuliusBrussee/caveman",
@@ -50,7 +50,7 @@
     ]
   },
   "grilling": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "mattpocock/skills",
@@ -116,7 +116,7 @@
     ]
   },
   "restate": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -127,7 +127,7 @@
     ]
   },
   "technical-writing": {
-    "reviewed": "2026-10-22",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -138,7 +138,7 @@
     ]
   },
   "unslop": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
