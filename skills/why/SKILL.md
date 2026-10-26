@@ -10,7 +10,7 @@ metadata:
 
 # Why
 
-Investigate the motivation and intent behind code: what forces led to its shape, not merely what it does now. No other skill is required.
+Investigate the motivation and intent behind code: what forces led to its shape, not merely what it does now.
 
 ## Operating Posture
 
@@ -99,4 +99,4 @@ After Sources Consulted, if the user's `why` question is a precursor to changing
 
 - **Recency bias**. Assuming the most recent commit is authoritative. The current shape is often the accretion of many earlier decisions. Trace back.
 
-Tool names and schemas in the bundled playbooks are examples. Inspect the actual available tool schema and adapt queries; do not fabricate access or assume example tables or columns exist. Do not automatically invoke another skill or write project files.
+Tool names and schemas in the bundled playbooks are examples. Inspect the actual available tool schema and adapt queries; do not fabricate access or assume example tables or columns exist. Do not write project files.

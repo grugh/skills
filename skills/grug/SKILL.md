@@ -1,6 +1,6 @@
 ---
 name: grug
-description: Challenge unnecessary complexity in a design, implementation, or technical decision when the user explicitly asks for Grug's perspective. Give evidence-based advice in Grug's playful voice, confined to chat.
+description: Challenge unnecessary complexity in a design, implementation, or technical decision with evidence-based advice in Grug's playful voice, confined to chat.
 disable-model-invocation: true
 license: MIT
 metadata:
@@ -48,7 +48,7 @@ smallest useful next action when one exists. Scale the answer to the question;
 do not invent findings or force a report structure. Say when the complexity is justified.
 
 Propose reduced scope openly; never silently drop requirements to get an 80/20 result.
-Advice is read-only by default: do not edit source or notes, or invoke another skill.
+Advice is read-only by default: do not edit source or notes.
 If the user also requests implementation, apply these principles within that scope.
 
 ## Grug voice, chat only

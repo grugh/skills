@@ -66,13 +66,13 @@
     "note": "Inspired by https://grugbrain.dev (Carson Gross). No upstream repo; the essay has no version to track."
   },
   "how": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/how",
-        "commit": "08bd59b37834550f5e8fa0bb5e8852204a7534cf",
-        "commit_date": "2026-10-12"
+        "commit": "ce649c03ac3b75b6ae80cbd15b7e2c536caedb5a",
+        "commit_date": "2026-10-14"
       }
     ]
   },
@@ -82,13 +82,13 @@
     "note": "Written locally. No upstream."
   },
   "interrogate": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/interrogate",
-        "commit": "00b14f1df36b32a8dd1529324a3a459f6563b127",
-        "commit_date": "2026-10-10"
+        "commit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
+        "commit_date": "2026-10-15"
       },
       {
         "repo": "mattpocock/skills",
@@ -99,13 +99,13 @@
     ]
   },
   "remember": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/recall",
-        "commit": "d7cde2b84eadbcd6fd890302c876f4436ccb6d82",
-        "commit_date": "2026-09-08"
+        "commit": "ce649c03ac3b75b6ae80cbd15b7e2c536caedb5a",
+        "commit_date": "2026-10-14"
       },
       {
         "repo": "mattpocock/skills",
@@ -149,13 +149,13 @@
     ]
   },
   "why": {
-    "reviewed": "2026-10-13",
+    "reviewed": "2026-10-26",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/why",
-        "commit": "08bd59b37834550f5e8fa0bb5e8852204a7534cf",
-        "commit_date": "2026-10-12"
+        "commit": "ce649c03ac3b75b6ae80cbd15b7e2c536caedb5a",
+        "commit_date": "2026-10-14"
       }
     ]
   }

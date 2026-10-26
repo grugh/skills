@@ -12,8 +12,6 @@ metadata:
 
 Find what a change breaks somewhere else, before it ships. Use for "blast radius of X", "what could this break", or reviewing a small diff you don't trust yet.
 
-This investigation covers what a change breaks elsewhere. No other skill is required.
-
 Listing the callers is not the job. The agent can grep those in a second. The job is the breakage grep won't show you.
 
 ## Don't trust your own writeup
@@ -53,4 +51,4 @@ Apply the bundled [prose editing instructions](references/writing.md), cite real
 
 **Reply:** the writeup above, with the one safety fact either proven or marked unproven.
 
-Run probes against the actual code and pinned dependencies, using temporary files or isolated test resources when needed. Do not change application source, fixtures, snapshots, or external data to make a probe pass. A no-write request also forbids creating probe files: use an allowed in-memory invocation or mark the fact unproven. For proposed changes, distinguish current-code evidence from predictions. Do not automatically invoke another skill or publish the report.
+Run probes against the actual code and pinned dependencies, using temporary files or isolated test resources when needed. Do not change application source, fixtures, snapshots, or external data to make a probe pass. A no-write request also forbids creating probe files: use an allowed in-memory invocation or mark the fact unproven. For proposed changes, distinguish current-code evidence from predictions. Do not publish the report.

@@ -30,4 +30,4 @@ Identify intended behavior from the request, requirements, and relevant history.
 
 Use independent contexts and model diversity when available and authorized. Sequential fallback preserves the rubrics and output contracts but is not an independent review; disclose the difference. Every adversarial reviewer receives the whole rubric. Standards and Spec remain separate reviews.
 
-Verify reported execution paths and citations before returning the review. Run focused checks when useful and permitted and record what actually ran and what remains unverified. Do not change source, snapshots, or tests as part of the review. Zero findings is valid; state coverage limits. Never automatically invoke another skill.
+Verify reported execution paths and citations before returning the review. Run focused checks when useful and permitted and record what actually ran and what remains unverified. Do not change source, snapshots, or tests as part of the review. Zero findings is valid; state coverage limits.

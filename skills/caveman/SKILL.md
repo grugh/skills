@@ -1,6 +1,6 @@
 ---
 name: caveman
-description: Use playful caveman-style speech when the user explicitly requests caveman mode. Ordinary requests for brevity do not activate this skill.
+description: Talk in terse caveman speech. Chat only; code and saved text stay normal.
 disable-model-invocation: true
 license: MIT
 metadata:
@@ -23,4 +23,4 @@ Example: "Pool reuse database connections. Less setup work. Keep pool under data
 
 Use for the requested reply. If the user asks for an ongoing mode, keep it until
 they say "stop caveman", "normal mode", or otherwise request normal speech.
-This changes chat style only; it does not authorize file edits or invoke other skills.
+This changes chat style only; it does not authorize file edits.

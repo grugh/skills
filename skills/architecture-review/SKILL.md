@@ -1,6 +1,6 @@
 ---
 name: architecture-review
-description: Audit an existing repository or subsystem for high-value structural simplifications, clearer ownership, and better boundaries. Return ranked recommendations without implementing them.
+description: Audit an existing repository or subsystem for high-value structural simplifications and modules worth deepening. Return ranked recommendations without implementing them.
 disable-model-invocation: true
 license: MIT
 metadata:
@@ -69,4 +69,4 @@ After the user selects a candidate and asks to explore it, follow the bundled [d
 
 If the user asks for alternative interfaces, follow [Design It Twice](references/DESIGN-IT-TWICE.md). Do not design interfaces before candidate selection.
 
-Keep domain terms consistent with the existing glossary and identify conflicts with existing ADRs. Report newly clarified terms and consequential decisions in the conversation. Do not automatically create or update a glossary, ADR, or application code. Implementation or documentation changes require the corresponding user request. Do not invoke another skill.
+Keep domain terms consistent with the existing glossary and identify conflicts with existing ADRs. Report newly clarified terms and consequential decisions in the conversation. Do not automatically create or update a glossary, ADR, or application code. Implementation or documentation changes require the corresponding user request.

@@ -18,5 +18,16 @@ agents use it to skip upstream fetches that are already covered.
 
 ## Writing
 
-Prose in this repo follows the `unslop` skill. Skill bodies that mirror upstream
+Prose in this repo follows `skills/unslop/SKILL.md`. Skill bodies that mirror upstream
 text stay close to upstream, so change them only for a reason.
+
+## Shared references
+
+Some skills ship a copy of another file so they install alone. Edit the copies
+together. This prints nothing when they match:
+
+```bash
+cmp skills/why/references/epistemics.md skills/blast-radius/references/epistemics.md
+cmp skills/why/references/sources/code-archaeology.md skills/blast-radius/references/code-archaeology.md
+awk 'f>=2; /^---$/{f++}' skills/unslop/SKILL.md | tail -n +2 | cmp - skills/blast-radius/references/writing.md
+```
