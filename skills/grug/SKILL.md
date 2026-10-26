@@ -4,7 +4,6 @@ description: Challenge unnecessary complexity in a design, implementation, or te
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Inspired by Carson Gross, The Grug Brained Developer"
 ---
 

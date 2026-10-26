@@ -3,8 +3,6 @@ name: innovate
 description: Propose the single most valuable and inventive addition to the current project.
 disable-model-invocation: true
 license: MIT
-metadata:
-  opencode/autoinvoke: "false"
 ---
 
 # Innovate

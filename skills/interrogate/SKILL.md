@@ -4,7 +4,6 @@ description: Review a concrete diff or implementation for correctness, spec comp
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: interrogate; Matt Pocock, skills: code-review."
 ---
 

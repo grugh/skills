@@ -4,7 +4,6 @@ description: Explain how an existing subsystem, feature, or code path works now 
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: how."
 ---
 

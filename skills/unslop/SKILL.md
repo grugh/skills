@@ -4,7 +4,6 @@ description: Cut AI tells from any writing. Invoke it on the prose you want clea
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: unslop."
 ---
 

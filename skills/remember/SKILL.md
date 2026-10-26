@@ -4,7 +4,6 @@ description: Remember a task across sessions in project-local state. Explicitly 
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: session pickup and recall; Matt Pocock, skills: context persistence."
 ---
 

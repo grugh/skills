@@ -4,7 +4,6 @@ description: Trace what outside a proposed or implemented change could break, es
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: blast-radius."
 ---
 

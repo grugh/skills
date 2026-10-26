@@ -42,42 +42,21 @@ To install manually, copy a skill folder, with everything in it, into your harne
 ## Optional task memory
 
 The `remember` skill saves task state between sessions. Installing it does not
-turn memory on. Invoke it in each session that should use memory:
-`/remember` (Claude Code), `$remember` (Codex) or `/skill:remember` (Pi). Start
-the message with the command; mentioning it mid-sentence does not load it.
+turn memory on. Start a message with `/remember` (Claude Code), `$remember`
+(Codex) or `/skill:remember` (Pi), followed by the task as you would describe
+it, such as `/remember the dcv validation thing`. A bare `/remember` on the
+task's branch also works.
 
-The first save writes `.local/agents/.gitignore` containing `*`, so the folder
-ignores itself and the project's `.gitignore` stays untouched. It also writes a
-short `.local/agents/README.md` marker and the task's `state.md`.
+The first call in a session loads the task and writes nothing unless you ask it
+to save. Later calls save. If nothing matches and you describe new work, it
+creates a task. Once a task is loaded, the agent updates its notes after
+commits, finished checks and decisions. Nothing runs in the background.
 
-The [protocol](skills/remember/assets/project-state.md) lives only in the skill,
-so updating the skill updates every project. Each save rewrites `state.md` in
-the current format. The skill never reads or changes an existing
-`.local/agents/README.md`.
-
-`state.md` is the entry point and the only status record: goal, status, open
-issues, the next step and links to topic files, overwritten in place. Reference
-material such as context, decisions, plans and specs goes in topic files next to
-it, one topic per file, created when the topic first has content. The skill
-never reads or writes your repository docs. Those change only when you ask for a
-specific edit.
-
-Once a task is loaded, the agent updates `state.md` after commits, finished
-checks and decisions, and before handoff. Nothing runs in the background. These
-are instructions to the agent, and `remember` on its own reconciles the state
-before you stop.
-
-There are no subcommands. Describe the task however you remember it:
-`/remember the dcv validation thing`, or just `/remember` on the task's branch.
-The agent finds the closest saved task and asks if several fit. The first call
-in a session loads the task: it reads the state, compares it with the repository
-and writes nothing unless you ask it to save. Later calls save. If nothing matches and you describe new
-work, it creates a task. Existing memory files do not start a session
-on their own. Saying "don't use memory" or "only read memory" overrides this for
-the session.
-
-Check that `git ls-files -- .local/agents/` prints nothing; ignore rules do not
-untrack files Git already tracks.
+Notes live in `.local/agents/`, which ignores itself through its own
+`.gitignore`. The skill never touches your ignore files or repository docs.
+Check that `git ls-files -- .local/agents/` prints nothing, because ignore rules
+do not untrack files Git already tracks. The
+[protocol](skills/remember/assets/project-state.md) describes the layout.
 
 ## Credits
 

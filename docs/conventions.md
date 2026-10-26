@@ -4,9 +4,9 @@ A small set of coding-agent skills. Each works on its own. The skill list and
 install steps are in [README.md](../README.md).
 
 - **Explicit.** Skills run only when you invoke them, never because the agent
-  decides one fits. Each sets `disable-model-invocation: true`,
-  `opencode/autoinvoke: "false"` and, in `agents/openai.yaml`,
-  `allow_implicit_invocation: false`. Start the message with the command
+  decides one fits. Each sets `disable-model-invocation: true`, which Claude
+  Code and OpenCode read, and `allow_implicit_invocation: false` in
+  `agents/openai.yaml` for Codex. Start the message with the command
   (`/how`, `$how`); a mention mid-sentence does not load the skill.
 - **Independent.** A skill may recommend another skill but never invokes it.
   There is no required order and no shared runtime.

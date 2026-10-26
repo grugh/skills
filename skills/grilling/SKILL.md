@@ -4,7 +4,6 @@ description: Grill the user relentlessly about a plan, decision, or idea to stre
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Matt Pocock, skills: grilling."
 ---
 

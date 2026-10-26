@@ -4,7 +4,6 @@ description: Talk in terse caveman speech. Chat only; code and saved text stay n
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Julius Brussee, caveman: caveman"
 ---
 

@@ -4,7 +4,6 @@ description: Audit an existing repository or subsystem for high-value structural
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Matt Pocock, skills: improve-codebase-architecture, codebase-design."
 ---
 

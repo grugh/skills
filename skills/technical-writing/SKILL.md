@@ -4,7 +4,6 @@ description: "Layered technical-writing standard: Diátaxis structure, Google de
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: technical-writing."
 ---
 

@@ -4,7 +4,6 @@ description: Investigate the historical rationale behind code or architecture us
 disable-model-invocation: true
 license: MIT
 metadata:
-  opencode/autoinvoke: "false"
   source: "Lauren Tan, pstack: why."
 ---
 
