@@ -13,8 +13,7 @@ metadata:
 There are no subcommands. Find the task, then pick the action from the session:
 
 - **Load:** the task isn't loaded in this session yet and a match exists. Read it
-  and report. Write nothing, even if the request mentions saving; say that the
-  next invocation saves.
+  and report. If the request asks to save, run Save right after loading.
 - **Save:** the task was already loaded or created in this session. Write
   `state.md`.
 - **New:** nothing matches and the user describes work worth tracking. Set up if
@@ -78,7 +77,7 @@ and ask. Continue an archived task in place.
 
 After loading or saving, keep `state.md` current at milestones for the rest of
 the session, as the protocol describes. If the user says "the docs" and could
-mean either `state.md` or the repository's docs, ask once. Never commit, archive
-or invoke another skill automatically.
+mean either `state.md` or the repository's docs, ask once. Never commit or
+archive automatically.
 
 Return the path, a one-line status, the next action and any unverified gap.

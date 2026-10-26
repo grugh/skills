@@ -71,7 +71,7 @@ There are no subcommands. Describe the task however you remember it:
 `/remember the dcv validation thing`, or just `/remember` on the task's branch.
 The agent finds the closest saved task and asks if several fit. The first call
 in a session loads the task: it reads the state, compares it with the repository
-and writes nothing. Later calls save. If nothing matches and you describe new
+and writes nothing unless you ask it to save. Later calls save. If nothing matches and you describe new
 work, it creates a task. Existing memory files do not start a session
 on their own. Saying "don't use memory" or "only read memory" overrides this for
 the session.

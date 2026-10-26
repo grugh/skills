@@ -12,7 +12,7 @@ invokes the remember skill.
 tasks/<TICKET>-<topic>/state.md       # entry point: status and links
 tasks/<TICKET>-<topic>/context.md     # environment, access, paths, accounts, fixtures
 tasks/<TICKET>-<topic>/decisions.md   # settled choices and rejected options, with why
-tasks/<TICKET>-<topic>/plan.md        # remaining pieces in order
+tasks/<TICKET>-<topic>/plan.md        # remaining work in order
 tasks/<TICKET>-<topic>/<topic>.md     # any other topic: spec, contracts, QA, tests, handoffs
 tasks/<TICKET>-<topic>/artifacts/     # evidence: logs, outputs, screenshots, probes
 archive/<TICKET>-<topic>/             # finished tasks, moved by the user
@@ -28,23 +28,15 @@ changes from session to session, in these sections:
 
 - **Goal:** the outcome and when it counts as done. Open with one plain sentence
   a person would use to describe the task; agents find tasks by it.
-- **Status:** finished pieces, one line each with the commit; verified (with the
+- **Status:** finished work, one line each with the commit; verified (with the
   check that proved it); pending and uncommitted work; branch and last commit.
 - **Open issues:** known gaps, deferred problems, checks still needed.
-- **Next:** the next piece of work, sized to finish and verify in one fresh
-  session, starting with a concrete action on a file or symbol. Or "complete"
-  plus any follow-up.
+- **Next:** one concrete action with the file or symbol, or "complete" plus any
+  follow-up.
 - **Files:** one line per topic file, saying what it holds.
 
 Environment details, decisions, plans and other reference material never go in
 `state.md`; it links to them.
-
-When more than one piece remains, list the rest in order in `plan.md`, each one
-sized for a fresh session and verifiable on its own. Skip `plan.md` when one
-piece covers the task. **Status** names the pieces done.
-
-When the piece in **Next** is done and verified, save, then stop and suggest a fresh
-session for the next piece. Don't start it in this session.
 
 On each save, rewrite `state.md` to match the present. Remove what is no longer
 true or what Git history already records, and move anything that is still
