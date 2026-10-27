@@ -137,6 +137,11 @@
       }
     ]
   },
+  "translate-bg": {
+    "reviewed": "2026-10-27",
+    "upstream": [],
+    "note": "Written locally. No upstream."
+  },
   "unslop": {
     "reviewed": "2026-10-26",
     "upstream": [

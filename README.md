@@ -15,6 +15,7 @@ Each runs only when you invoke it by its command; the agent never loads one on i
 | [bro](skills/bro/SKILL.md) | Make an explanation shorter and easier to understand. |
 | [unslop](skills/unslop/SKILL.md) | Remove AI writing patterns from prose. |
 | [technical-writing](skills/technical-writing/SKILL.md) | Write or review docs, PR descriptions and commit messages to a technical-writing standard. |
+| [translate-bg](skills/translate-bg/SKILL.md) | Translate English technical text into Bulgarian as a developer would write it. |
 | [remember](skills/remember/SKILL.md) | Load a saved task or save its state. |
 | [innovate](skills/innovate/SKILL.md) | Propose one valuable new project idea without implementing it. |
 | [caveman](skills/caveman/SKILL.md) | Talk in terse caveman speech when asked. |
