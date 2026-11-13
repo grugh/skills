@@ -82,13 +82,13 @@
     "note": "Written locally. No upstream."
   },
   "interrogate": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-13",
     "upstream": [
       {
         "repo": "cursor/plugins",
         "path": "pstack/skills/interrogate",
-        "commit": "99743e9c151c8537cbbf1f98bb38f34ef3368453",
-        "commit_date": "2026-10-15"
+        "commit": "ab1f702ce8e8b6557edb56b09f52cde8bfb83f17",
+        "commit_date": "2026-10-27"
       },
       {
         "repo": "mattpocock/skills",

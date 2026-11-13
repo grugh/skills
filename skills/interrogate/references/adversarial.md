@@ -1,63 +1,35 @@
-# Interrogate
+# Adversarial review
 
-Use independent reviewers, one per configured model when supported, to adversarially review code changes. The adversarial signal comes from model diversity, not assigned personas. The deliverable is a synthesized verdict. Do NOT auto-apply changes.
+Adversaries try to break the change. A finding survives only when a run proves it. Report the findings. Do not apply fixes.
 
-## Step 1, Scope
+## Step 1, Intent
 
-Identify what to review from context:
+State the intent in one paragraph, from the user's message, the commits, the PR description if one exists, and the code. Ask the user when the intent is unclear. Adversaries test the change against this intent, not against their own idea of what the code should do.
 
-- If the user points at specific files or a diff, use that.
-- If on a feature branch, use the resolved comparison from the entrypoint, `git diff <fixed-point>...HEAD`, for the full changeset.
-- If the user's message references recent work, gather the relevant files.
+## Step 2, Fan out
 
-Package the diff or file contents with any surrounding context files the reviewers need to understand the code.
+When delegation is available and authorized, launch two or more adversaries in parallel with the harness's supported tools. Start each with a fresh context window. Use distinct models when the harness supports them and they are configured. Do not assume model identifiers or change model configuration.
 
-## Step 2, Intent
+Each adversary needs a place to run code outside the user's working tree. Use a worktree or scratch copy when the harness provides one, and copy the scope's uncommitted changes into it. Otherwise give each adversary its own scratch directory.
 
-Before spawning reviewers, state the intent in one clear paragraph from the user's message, commit messages, the PR description if one exists, and the code. If you're unsure about the intent, ask the user before proceeding.
+Give each adversary the scope, the intent, [where-to-look.md](where-to-look.md), and this brief, with `{REPRO_DIR}` filled in:
 
-## Step 3, Spawn Reviewers
+> Break this change. Prove each finding with a run against the real code, such as a failing test, a repro script, or command output that shows the wrong behavior. For a design or plan, run a prototype or probe the current tree. Keep repros in {REPRO_DIR} and leave the user's working tree as you found it. Report each finding with a title, the exact command, the output it printed, and the output the intent requires. Leave out anything you did not run. That covers style, naming, structure, and risks that need a future change to matter. No findings is a valid result.
 
-When delegation is available and authorized, launch independent reviewers using the harness's supported tools. Use distinct models when supported and configured; otherwise use fresh contexts with the available model. Every reviewer gets the same prompt and complete rubric, not an assigned lens or persona. Do not assume specific model identifiers or modify model configuration.
+If delegation is unavailable, follow the brief yourself as a single adversary. Report that the review was not independent.
 
-If delegation is unavailable, perform one full-rubric review locally and a separate lead-judgment pass. Clearly report that there was no independent or multi-model review; do not fabricate reviewers, agreement counts, or consensus.
+## Step 3, Verify
 
-Read [reviewer-prompt.md](reviewer-prompt.md) and fill in the same template for every reviewer with the stated intent, the diff or file contents, the rubric from [rubric.md](rubric.md), and the code-quality lens from [code-quality-review.md](code-quality-review.md).
+Rerun each finding's command yourself. Keep a finding when the output shows the failure and the failure breaks the intent. Drop the rest, including findings that come without a command. Merge findings that share a root cause.
 
-## Step 4, Synthesize
+Keep every verified finding. Adversaries find different failures, so do not rank adversaries against each other or weight a finding by how many of them raised it.
 
-As results come back, build a unified picture. Parse every reviewer's findings. Merge findings that describe the same issue differently, and note which models raised each one. Findings two or more models raised independently are the highest signal. Read a lone model's finding, but weight it accordingly. Note disagreements. If one model flags something and another explicitly says the opposite, that is context for the verdict.
+If the harness does not allow running commands, say so. List each finding that needs a run under Unverified, with the command that would prove it. Never present an unverified finding as verified.
 
-## Step 5, Lead Judgment
+## Output
 
-You are the lead reviewer, a pragmatic senior engineer, not a neutral aggregator. Read [lead-judgment.md](lead-judgment.md) for the full framework. Put every finding in one of four buckets, with the model(s) that raised it and a one-line rationale.
-
-- **Act on**. Real issues affecting correctness, security, or maintainability given the actual goals. They would block a real PR.
-- **Consider**. Legitimate, but you're not sure they outweigh the cost of addressing them now. Worth the user's attention.
-- **Noted**. Technically valid but not actionable. Context-dependent, premature optimization, or low-impact at this stage.
-- **Dismissed**. Wrong, nitpicky, or missing context, with a brief reason.
-
-## Output Format
-
-### Intent
-> [The stated intent paragraph from Step 2]
-
-### Reviewers
-- Reviewer [label]: [model name], [N findings] (one bullet per reviewer)
-
-### Act On
-[Each: description, which models raised it, why it matters.]
-
-### Consider
-[Each: description, which models raised it, the tradeoff.]
-
-### Noted
-[Brief list.]
-
-### Dismissed
-[Each with a brief rationale.]
-
-### Agreement Map
-[Where models agreed and diverged, and what that pattern tells us.]
-
-For a local-only review, identify the single pass and its limits under Reviewers; mark the Agreement Map unavailable instead of simulating independent agreement.
+- **Intent**: the paragraph from Step 1.
+- **Adversaries**: how many ran, on which models, and whether they ran independently.
+- **Findings**: for each verified finding, the command, its output, how it breaks the intent, and the adversaries that found it. Say "no verified findings" when none survive.
+- **Dropped**: for each adversary, the count of dropped findings and why.
+- **Unverified**: only when runs were not possible, as described in Step 3.
