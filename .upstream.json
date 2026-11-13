@@ -1,23 +1,23 @@
 {
   "architecture-review": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-13",
     "upstream": [
       {
         "repo": "mattpocock/skills",
         "path": "skills/engineering/improve-codebase-architecture",
-        "commit": "d80fa0f4ebe0c5714af0adf8670336065233ecc6",
-        "commit_date": "2026-09-17"
+        "commit": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+        "commit_date": "2026-10-29"
       },
       {
         "repo": "mattpocock/skills",
         "path": "skills/engineering/codebase-design",
-        "commit": "d80fa0f4ebe0c5714af0adf8670336065233ecc6",
-        "commit_date": "2026-09-17"
+        "commit": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+        "commit_date": "2026-10-29"
       }
     ]
   },
   "blast-radius": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -28,7 +28,7 @@
     ]
   },
   "bro": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -39,7 +39,7 @@
     ]
   },
   "caveman": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "JuliusBrussee/caveman",
@@ -50,13 +50,13 @@
     ]
   },
   "grilling": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-13",
     "upstream": [
       {
         "repo": "mattpocock/skills",
         "path": "skills/productivity/grilling",
-        "commit": "95249b0b49782349740fd9b8c6ce32b4e59e497a",
-        "commit_date": "2026-10-07"
+        "commit": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+        "commit_date": "2026-10-29"
       }
     ]
   },
@@ -66,7 +66,7 @@
     "note": "Inspired by https://grugbrain.dev (Carson Gross). No upstream repo; the essay has no version to track."
   },
   "how": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -93,13 +93,13 @@
       {
         "repo": "mattpocock/skills",
         "path": "skills/engineering/code-review",
-        "commit": "3da8c01116264675eeefbd6e9d59c734de9095cc",
-        "commit_date": "2026-10-07"
+        "commit": "7739eaed7f8f3915437a8def198a6d0d7206dbc7",
+        "commit_date": "2026-10-29"
       }
     ]
   },
   "remember": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -116,7 +116,7 @@
     ]
   },
   "restate": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -127,7 +127,7 @@
     ]
   },
   "technical-writing": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -143,7 +143,7 @@
     "note": "Written locally. No upstream."
   },
   "unslop": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",
@@ -154,7 +154,7 @@
     ]
   },
   "why": {
-    "reviewed": "2026-10-26",
+    "reviewed": "2026-11-10",
     "upstream": [
       {
         "repo": "cursor/plugins",

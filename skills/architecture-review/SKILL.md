@@ -27,7 +27,7 @@ This command is _informed_ by the project's domain model and built on a shared d
 
 Read the project's existing domain glossary (`GLOSSARY.md` or its equivalent) and any ADRs in the area you're touching first. Their absence is not a setup requirement; do not create them during the audit.
 
-Then explore the codebase, using an independent explorer when delegation is available and authorized or investigating locally otherwise. Don't follow rigid heuristics; explore organically and note where you experience friction:
+Then explore the codebase, using an independent explorer with a fresh context window when delegation is available and authorized, or investigating locally otherwise. Don't follow rigid heuristics; explore organically and note where you experience friction:
 
 - Where does understanding one concept require bouncing between many small modules?
 - Where are modules **shallow**, with an interface nearly as complex as the implementation?

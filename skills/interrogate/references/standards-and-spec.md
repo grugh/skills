@@ -3,7 +3,7 @@ Two-axis review of the diff between `HEAD` and a fixed point the user supplies:
 - **Standards**: does the code conform to this repo's documented coding standards?
 - **Spec**: does the code faithfully implement the originating issue / spec?
 
-Both axes run as **parallel sub-agents** when delegation is available and authorized, keeping their findings independent. Otherwise perform two explicitly separated local passes and disclose the lack of context isolation. In either case keep the final reports separate.
+Both axes run as **parallel sub-agents** when delegation is available and authorized, keeping their findings independent. Start each with a fresh context window. Otherwise perform two explicitly separated local passes and disclose the lack of context isolation. In either case keep the final reports separate.
 
 Use the available issue-tracker or repository-hosting integration and any existing project instructions for it. No setup skill or particular configuration file is required. Report inaccessible issues and ask for a specification source when necessary.
 
